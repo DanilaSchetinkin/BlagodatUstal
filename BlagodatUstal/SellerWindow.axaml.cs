@@ -1,88 +1,65 @@
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 using Avalonia.Threading;
-using BlagodatUstal;
+using BlagodatUstal.Models;
 using System;
-using System.Timers;
+using System.Net;
 
-namespace YourNamespace
+namespace BlagodatUstal
 {
     public partial class SellerWindow : Window
     {
-        private Timer _sessionTimer;
-        private DateTime _sessionStartTime;
-        private TimeSpan _warningThreshold = TimeSpan.FromMinutes(5);
-        private TimeSpan _logoutThreshold = TimeSpan.FromMinutes(10);
+        private readonly User _user;
+        private DispatcherTimer _sessionTimer;
+        private DateTime _sessionStart;
 
-        public SellerWindow()
+        public SellerWindow(User user)
         {
             InitializeComponent();
-            StartSessionTimer();
+            _user = user;
+            _sessionStart = DateTime.Now;
+            InitializeSessionTimer();
         }
 
-        private void StartSessionTimer()
+        private void InitializeSessionTimer()
         {
-            _sessionStartTime = DateTime.Now;
-
-            _sessionTimer = new Timer(1000); // Обновление каждую секунду
-            _sessionTimer.Elapsed += OnTimerElapsed;
+            _sessionTimer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromMinutes(1) // Проверка каждую минуту
+            };
+            _sessionTimer.Tick += CheckSessionTime;
             _sessionTimer.Start();
         }
 
-        private void OnTimerElapsed(object sender, ElapsedEventArgs e)
+        private void CheckSessionTime(object? sender, EventArgs e)
         {
-            var elapsed = DateTime.Now - _sessionStartTime;
-
-            Dispatcher.UIThread.Post(() =>
+            var elapsed = DateTime.Now - _sessionStart;
+            if (elapsed.TotalMinutes >= 150) // 2.5 часа
             {
-                SessionTimerText.Text = $"Сеанс: {elapsed:mm\\:ss}";
-
-                if (elapsed >= _warningThreshold && elapsed < _logoutThreshold)
-                {
-                    SessionTimerText.Foreground = Avalonia.Media.Brushes.Orange;
-                }
-
-                if (elapsed >= _logoutThreshold)
-                {
-                    _sessionTimer.Stop();
-                    SessionTimerText.Foreground = Avalonia.Media.Brushes.Red;
-                    SessionTimerText.Text = "Сеанс завершён";
-
-                    MessageBox("Сессия завершена. Вы будете выведены из системы.");
-                    Dispatcher.UIThread.Post(() =>
-                    {
-                        Close();
-                        // Можно здесь показать снова MainWindow
-                        new MainWindow().Show();
-                    });
-                }
-            });
+                LogSessionEnd();
+                Close();
+                new MainWindow().Show();
+            }
         }
 
-        private void Logout_Click(object? sender, RoutedEventArgs e)
+        private void LogSessionEnd()
         {
-            _sessionTimer?.Stop();
-            Close();
-            new MainWindow().Show();
+            using (var db = new User15Context())
+            {
+                db.LoginHistories.Add(new LoginHistory
+                {
+                    UserId = _user.Id,
+                    LoginTime = DateTime.Now,
+                    IsSuccess = false,
+                    IpAddress = GetIpAddress(),
+                    UsernameAttempt = "Автоматический выход по таймауту"
+                });
+                db.SaveChanges();
+            }
         }
 
-        private async void MessageBox(string message)
+        private string GetIpAddress()
         {
-            var dlg = new Window
-            {
-                Width = 300,
-                Height = 150,
-                Title = "Сообщение",
-                Content = new TextBlock
-                {
-                    Text = message,
-                    HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Center,
-                    VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center,
-                    TextWrapping = Avalonia.Media.TextWrapping.Wrap
-                }
-            };
-
-            await dlg.ShowDialog(this);
+            try { return Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString(); }
+            catch { return "unknown"; }
         }
     }
-}

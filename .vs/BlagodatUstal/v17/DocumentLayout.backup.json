@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\sellerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\sellerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\sellerwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\sellerwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\blagodatustal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\blagodatustal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\adminwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\adminwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\sellerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\sellerwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\adminwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\adminwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\models\\loginhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\models\\loginhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\models\\user15context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\models\\user15context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\blagodatustal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\blagodatustal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\models\\fond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\models\\fond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|solutionrelative:blagodatustal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB28E110-98A7-42E0-883D-02E853116394}|BlagodatUstal\\BlagodatUstal.csproj|d:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\blagodatustal\\blagodatustal\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
@@ -42,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +90,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "BlagodatUstal\\ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\ViewModels\\MainWindowViewModel.cs*",
-              "RelativeToolTip": "BlagodatUstal\\ViewModels\\MainWindowViewModel.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T16:36:33.402Z",
+              "DocumentIndex": 2,
+              "Title": "AdminWindow.axaml",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\AdminWindow.axaml",
+              "RelativeDocumentMoniker": "BlagodatUstal\\AdminWindow.axaml",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\AdminWindow.axaml",
+              "RelativeToolTip": "BlagodatUstal\\AdminWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-11T21:27:29.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SellerWindow.axaml",
               "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\SellerWindow.axaml",
               "RelativeDocumentMoniker": "BlagodatUstal\\SellerWindow.axaml",
@@ -91,45 +114,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "SellerWindow.axaml.cs",
               "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\SellerWindow.axaml.cs",
               "RelativeDocumentMoniker": "BlagodatUstal\\SellerWindow.axaml.cs",
-              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\SellerWindow.axaml.cs",
-              "RelativeToolTip": "BlagodatUstal\\SellerWindow.axaml.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAIwFcAAAABAAAAAAAAAA==",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\SellerWindow.axaml.cs*",
+              "RelativeToolTip": "BlagodatUstal\\SellerWindow.axaml.cs*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T16:29:05.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User15Context.cs",
-              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\User15Context.cs",
-              "RelativeDocumentMoniker": "BlagodatUstal\\Models\\User15Context.cs",
-              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\User15Context.cs",
-              "RelativeToolTip": "BlagodatUstal\\Models\\User15Context.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\MainWindow.axaml.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\MainWindow.axaml.cs",
+              "RelativeToolTip": "BlagodatUstal\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T15:57:41.594Z",
+              "WhenOpened": "2025-05-11T14:35:47.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.axaml",
-              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\App.axaml",
-              "RelativeDocumentMoniker": "BlagodatUstal\\App.axaml",
-              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\App.axaml",
-              "RelativeToolTip": "BlagodatUstal\\App.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-11T15:04:36.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\MainWindow.axaml",
               "RelativeDocumentMoniker": "BlagodatUstal\\MainWindow.axaml",
@@ -141,29 +152,118 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "BlagodatUstal\\MainWindow.axaml.cs",
-              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\MainWindow.axaml.cs",
-              "RelativeToolTip": "BlagodatUstal\\MainWindow.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AdminWindow.axaml.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\AdminWindow.axaml.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\AdminWindow.axaml.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\AdminWindow.axaml.cs",
+              "RelativeToolTip": "BlagodatUstal\\AdminWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T14:35:47.359Z",
+              "WhenOpened": "2025-05-11T21:27:29.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\Models\\User.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\User.cs",
+              "RelativeToolTip": "BlagodatUstal\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:15:34.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\Models\\Role.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\Role.cs",
+              "RelativeToolTip": "BlagodatUstal\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:15:49.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginHistory.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\LoginHistory.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\Models\\LoginHistory.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\LoginHistory.cs",
+              "RelativeToolTip": "BlagodatUstal\\Models\\LoginHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:15:02.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "BlagodatUstal.csproj",
               "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\BlagodatUstal.csproj",
               "RelativeDocumentMoniker": "BlagodatUstal\\BlagodatUstal.csproj",
               "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\BlagodatUstal.csproj",
               "RelativeToolTip": "BlagodatUstal\\BlagodatUstal.csproj",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBgAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-11T14:36:21.025Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User15Context.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\User15Context.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\Models\\User15Context.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\User15Context.cs",
+              "RelativeToolTip": "BlagodatUstal\\Models\\User15Context.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wCIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T15:57:41.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Fond.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\Fond.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\Models\\Fond.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\Fond.cs",
+              "RelativeToolTip": "BlagodatUstal\\Models\\Fond.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:15:06.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "BlagodatUstal\\Models\\Client.cs",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\Models\\Client.cs",
+              "RelativeToolTip": "BlagodatUstal\\Models\\Client.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:14:25.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.axaml",
+              "DocumentMoniker": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\App.axaml",
+              "RelativeDocumentMoniker": "BlagodatUstal\\App.axaml",
+              "ToolTip": "D:\\Users\\\u0410\u041B\u0415\u041A\u0421\u0410\u041D\u0414\u0420\\source\\repos\\BlagodatUstal\\BlagodatUstal\\App.axaml",
+              "RelativeToolTip": "BlagodatUstal\\App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-11T15:04:36.577Z"
             }
           ]
         },
