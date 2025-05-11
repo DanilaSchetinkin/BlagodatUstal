@@ -24,4 +24,6 @@ public partial class User
     public string Country { get; set; } = null!;
 
     public bool? Active { get; set; }
+
+    public int RoleId { get; set; }
 }

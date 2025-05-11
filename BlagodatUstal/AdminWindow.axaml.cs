@@ -13,14 +13,22 @@ namespace BlagodatUstal
             LoadHistory();
         }
 
-        private void LoadHistory()
+        private async void LoadHistory()
         {
             using (var db = new User15Context())
             {
-                HistoryGrid.Items = db.LoginHistories
-                    .Include(lh => lh.User)
+                // Загружаем историю без включения пользователя
+                var history = await db.LoginHistories
                     .OrderByDescending(lh => lh.LoginTime)
-                    .ToList();
+                    .ToListAsync();
+
+                // Если нужно загрузить пользователей отдельно
+                foreach (var item in history.Where(lh => lh.UserId.HasValue))
+                {
+                    item.User = await db.Users.FindAsync(item.UserId.Value);
+                }
+
+                HistoryGrid.ItemsSource = history;
             }
         }
     }

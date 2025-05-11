@@ -1,23 +1,38 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Avalonia.Media.Imaging;
+using Avalonia;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BlagodatUstal.Models; // Убедитесь, что у вас есть правильный namespace для моделей
+using BlagodatUstal.Models;
+using Avalonia.Threading;
 
 namespace BlagodatUstal
 {
+
+    
+
     public partial class MainWindow : Window
     {
         private int _attempts = 0;
         private bool _captchaRequired = false;
         private string _generatedCaptcha = string.Empty;
         private bool _passwordVisible = false;
+        private DispatcherTimer _sessionTimer;
+        private int _sessionTime = 0;
 
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public class UserWithRole
+        {
+            public User User { get; set; }
+            public Role Role { get; set; }
         }
 
         private async void AuthorizeButtonClick(object? sender, RoutedEventArgs e)
@@ -25,7 +40,6 @@ namespace BlagodatUstal
             var login = LoginTextBox.Text;
             var password = PasswordTextBox.Text;
 
-            // Проверка CAPTCHA если требуется
             if (_captchaRequired && CaptchaTextBox.Text != _generatedCaptcha)
             {
                 ErrorMessage.Text = "Неверная CAPTCHA";
@@ -33,43 +47,48 @@ namespace BlagodatUstal
                 return;
             }
 
-            using (var db = new User15Context()) // Замените YourDbContext на ваш реальный DbContext
+            using (var db = new User15Context())
             {
-                var user = await db.Users
-                    .Include(u => u.Role)
-                    .FirstOrDefaultAsync(u => u.Username == login && u.Password == password);
-
-                if (user != null)
+                try
                 {
-                    // Успешная авторизация
-                    await SaveLoginHistory(db, user.UserId, true);
+                    var userWithRole = await db.Users
+                        .Where(u => u.Email == login && u.Password == password)
+                        .Join(db.Roles,
+                            user => user.RoleId,
+                            role => role.RoleId,
+                            (user, role) => new UserWithRole { User = user, Role = role })
+                        .FirstOrDefaultAsync();
 
-                    // Скрываем сообщение об ошибке
-                    ErrorMessage.IsVisible = false;
-
-                    // Открываем соответствующее окно
-                    OpenUserWindow(user);
-                }
-                else
-                {
-                    _attempts++;
-                    await SaveLoginHistory(db, null, false);
-
-                    ErrorMessage.Text = "Неверный логин или пароль";
-                    ErrorMessage.IsVisible = true;
-
-                    if (_attempts >= 2)
+                    if (userWithRole != null)
                     {
-                        _captchaRequired = true;
-                        CaptchaPanel.IsVisible = true;
-                        GenerateCaptcha();
+                        await SaveLoginHistory(db, userWithRole.User.Id, true);
+                        ErrorMessage.IsVisible = false;
+                        OpenUserWindow(userWithRole.User, userWithRole.Role);
+                    }
+                    else
+                    {
+                        _attempts++;
+                        await SaveLoginHistory(db, null, false);
+                        ErrorMessage.Text = "Неверный логин или пароль";
+                        ErrorMessage.IsVisible = true;
 
-                        if (_attempts >= 3)
+                        if (_attempts >= 2)
                         {
-                            // Блокировка на 10 секунд
-                            await BlockLoginForTime(10);
+                            _captchaRequired = true;
+                            CaptchaPanel.IsVisible = true;
+                            GenerateCaptcha();
+
+                            if (_attempts >= 3)
+                            {
+                                await BlockLoginForTime(10);
+                            }
                         }
                     }
+                }
+                catch (Exception ex)
+                {
+                    ErrorMessage.Text = $"Ошибка: {ex.Message}";
+                    ErrorMessage.IsVisible = true;
                 }
             }
         }
@@ -81,29 +100,25 @@ namespace BlagodatUstal
                 UserId = userId,
                 LoginTime = DateTime.Now,
                 IsSuccess = isSuccess,
-                IpAddress = "127.0.0.1" // Здесь можно добавить реальный IP
+                IpAddress = "127.0.0.1"
             };
-
             db.LoginHistories.Add(loginHistory);
             await db.SaveChangesAsync();
         }
 
-        private void OpenUserWindow(User user)
+        private void OpenUserWindow(User user, Role role)
         {
-            Window userWindow;
-
-            switch (user.Role.Name)
+            if (role?.RoleName == null)
             {
-                case "Администратор":
-                    userWindow = new AdminWindow(user);
-                    break;
-                case "Старший смены":
-                case "Продавец":
-                    userWindow = new SellerWindow(user);
-                    break;
-                default:
-                    throw new InvalidOperationException("Неизвестная роль пользователя");
+                throw new InvalidOperationException("Роль пользователя не определена");
             }
+
+            Window userWindow = role.RoleName switch
+            {
+                "Администратор" => new AdminWindow(user),
+                "Старший смены" or "Продавец" => new SellerWindow(user),
+                _ => throw new InvalidOperationException($"Неизвестная роль пользователя: {role.RoleName}")
+            };
 
             userWindow.Show();
             this.Close();
@@ -113,19 +128,18 @@ namespace BlagodatUstal
         {
             LoginTextBox.IsEnabled = false;
             PasswordTextBox.IsEnabled = false;
-            AuthorizeButton.IsEnabled = false;
+            var authorizeButton = this.FindControl<Button>("AuthorizeButton");
+            authorizeButton.IsEnabled = false;
 
-            var endTime = DateTime.Now.AddSeconds(seconds);
-            while (DateTime.Now < endTime)
+            for (int i = seconds; i > 0; i--)
             {
-                var remaining = (endTime - DateTime.Now).Seconds;
-                ErrorMessage.Text = $"Система заблокирована. Попробуйте через {remaining} секунд";
+                ErrorMessage.Text = $"Система заблокирована. Попробуйте через {i} секунд";
                 await Task.Delay(1000);
             }
 
             LoginTextBox.IsEnabled = true;
             PasswordTextBox.IsEnabled = true;
-            AuthorizeButton.IsEnabled = true;
+            authorizeButton.IsEnabled = true;
             ErrorMessage.Text = "Попробуйте снова";
         }
 
@@ -142,15 +156,45 @@ namespace BlagodatUstal
 
         private void GenerateCaptcha()
         {
-            var symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
             var random = new Random();
-            _generatedCaptcha = new string(Enumerable.Range(0, 3)
-                .Select(_ => symbols[random.Next(symbols.Length)])
-                .ToArray());
+            var symbols = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+            _generatedCaptcha = new string(Enumerable.Repeat(symbols, 3)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
 
-            // TODO: Реализовать генерацию графической CAPTCHA с шумом
-            // Пока просто отображаем текст для тестирования
-            CaptchaTextBox.Watermark = $"Введите: {_generatedCaptcha}";
+            var width = 150;
+            var height = 50;
+            var bitmap = new RenderTargetBitmap(new PixelSize(width, height));
+
+            using (var ctx = bitmap.CreateDrawingContext())
+            {
+               
+            }
+
+            CaptchaImage.Source = bitmap;
+        }
+
+        private void StartSessionTimer()
+        {
+            _sessionTimer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(1)
+            };
+            _sessionTimer.Tick += (s, e) => {
+                _sessionTime++;
+                if (_sessionTime >= 600) ForceLogout(); // 10 минут
+                else if (_sessionTime >= 300) ShowWarning(); // 5 минут
+            };
+            _sessionTimer.Start();
+        }
+
+        private void ShowWarning()
+        {
+            // Реализация предупреждения
+        }
+
+        private void ForceLogout()
+        {
+            // Реализация выхода
         }
     }
 }

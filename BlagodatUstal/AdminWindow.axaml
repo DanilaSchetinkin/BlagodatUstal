@@ -1,15 +1,27 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:models="clr-namespace:BlagodatUstal.Models"
         x:Class="BlagodatUstal.AdminWindow"
         Width="1000" Height="600">
 	<Grid Margin="10">
-		<DataGrid x:Name="HistoryGrid" AutoGenerateColumns="False">
+		<DataGrid x:Name="HistoryGrid" AutoGenerateColumns="False"
+                 x:DataType="models:LoginHistory">
 			<DataGrid.Columns>
-				<DataGridTextColumn Header="Время" Binding="{Binding LoginTime, StringFormat='{}{0:dd.MM.yyyy HH:mm}'}" Width="Auto"/>
-				<DataGridTextColumn Header="Пользователь" Binding="{Binding User.Email}" Width="*"/>
-				<DataGridTextColumn Header="Попытка входа" Binding="{Binding UsernameAttempt}" Width="*"/>
-				<DataGridCheckBoxColumn Header="Успешно" Binding="{Binding IsSuccess}" Width="Auto"/>
-				<DataGridTextColumn Header="IP" Binding="{Binding IpAddress}" Width="Auto"/>
+				<DataGridTextColumn Header="Время"
+                                  Binding="{Binding LoginTime, StringFormat='{}{0:dd.MM.yyyy HH:mm}'}"
+                                  Width="Auto"/>
+				<DataGridTextColumn Header="Пользователь"
+                                  Binding="{Binding User.Email}"
+                                  Width="*"/>
+				<DataGridTextColumn Header="Попытка входа"
+                                  Binding="{Binding Description}"
+                                  Width="*"/>
+				<DataGridCheckBoxColumn Header="Успешно"
+                                      Binding="{Binding IsSuccess}"
+                                      Width="Auto"/>
+				<DataGridTextColumn Header="IP"
+                                  Binding="{Binding IpAddress}"
+                                  Width="Auto"/>
 			</DataGrid.Columns>
 		</DataGrid>
 	</Grid>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlagodatUstal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+974836d02e4b9da3fd4e0ba103d155e1b193f7b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eaabe9670175d6dcef748d238e0deeb78e32245")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlagodatUstal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlagodatUstal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
