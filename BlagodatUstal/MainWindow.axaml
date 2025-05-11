@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BlagodatUstal.MainWindow"
+        Title="Точка проката горнолыжного комплекса «Благодать»"
+        Width="450" Height="500">
+
+	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+
+		<TextBlock Text="Вход в систему" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" />
+
+		<TextBox x:Name="LoginTextBox" Watermark="Введите логин" Width="300" />
+
+		<StackPanel Orientation="Horizontal" Width="300">
+			<TextBox x:Name="PasswordTextBox" Width="260" PasswordChar="*" />
+			<Button Content="👁" Width="40" Click="TogglePasswordVisibility" />
+		</StackPanel>
+
+		<TextBlock x:Name="ErrorMessage" Foreground="Red" FontSize="12" IsVisible="False" />
+
+		<Button Content="Войти" Width="300" Click="AuthorizeButtonClick" />
+
+		<StackPanel x:Name="CaptchaPanel" IsVisible="False" Spacing="5">
+			<TextBlock Text="Введите CAPTCHA:" />
+			<Image x:Name="CaptchaImage" Width="150" Height="50" />
+			<TextBox x:Name="CaptchaTextBox" Width="150" />
+			<Button Content="Обновить CAPTCHA" Width="150" Click="RefreshCaptcha" />
+		</StackPanel>
+
+	</StackPanel>
+</Window>

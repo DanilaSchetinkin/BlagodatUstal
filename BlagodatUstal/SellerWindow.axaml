@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="YourNamespace.SellerWindow"
+        Width="800" Height="500"
+        Title="Окно продавца">
+	<Grid Margin="20">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!-- Верхняя панель с таймером и кнопкой выхода -->
+		<DockPanel Grid.Row="0" HorizontalAlignment="Stretch">
+			<TextBlock x:Name="SessionTimerText"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Center"
+                       FontSize="16"
+                       Margin="0,0,10,0"
+                       DockPanel.Dock="Right"/>
+			<Button Content="Выход"
+                    Click="Logout_Click"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,0"
+                    DockPanel.Dock="Right"/>
+		</DockPanel>
+
+		<!-- Основное содержимое -->
+		<StackPanel Grid.Row="1" Margin="0,20,0,0">
+			<TextBlock Text="Добро пожаловать, продавец!" FontSize="24"/>
+			<!-- Здесь будет интерфейс оформления заказов -->
+		</StackPanel>
+	</Grid>
+</Window>
